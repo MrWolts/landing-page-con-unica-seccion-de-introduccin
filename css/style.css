@@ -1,0 +1,216 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+:root {
+    --color-primary: hsl(257, 40%, 49%);
+    --font-heading: 'Poppins', sans-serif;
+    --font-body: 'Open Sans',sans-serif;
+}
+
+html {
+    font-size: 10px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url(../images/bg-mobile.svg);
+    background-repeat: no-repeat;
+    background-color: var(--color-primary);
+}
+
+header {
+    height: 10rem;
+}
+
+.header__logo {
+    height: 100%;
+    margin-left: 23px;
+    display: flex;
+}
+
+.header__logo img {
+    width: 140px;
+}
+
+main {
+    text-align: center;
+}
+
+.main__img-container {
+    margin: 5.2% 0;
+    text-align: center;
+}
+
+.main__img-container img {
+    width: 82%;
+}
+
+.main__information {
+    margin: 6%;
+    color: white;
+}
+
+.main__information h1 {
+    font-family: var(--font-heading);
+    font-size: 2.5rem;
+}
+
+.main__information p {
+    margin: 6% 0;
+    font-family: var(--font-body);
+    font-size: 1.7rem;
+}
+
+.main__information button {
+    width: 200px;
+    height: 35px;
+    margin: 0 auto 15px;
+    border-radius: 25px;
+    border: none;
+    box-shadow: 3px 3px 6px 2px #00000042;
+    color: var(--color-primary);
+    font-family: var(--font-body);
+}
+
+footer {
+    display: flex;
+    height: 80px;
+}
+
+footer .social-networks {
+    text-align: center;
+    margin: auto;
+}
+
+footer .social-networks a {
+    padding: 7px;
+    margin: 0 3px;
+    border: 1px solid white;
+    border-radius: 50%;
+    text-decoration: none;
+    color: white;
+    font-size: 1.4rem;
+}
+
+@media screen and (min-width: 420px) {
+    body {
+        background-image: url(../images/bg-desktop.svg);
+    }
+}
+
+@media screen and (min-width: 720px) {
+
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: 0% 5% 0 5%;
+    }
+
+    .main__information h1 {
+        font-size: 2.5rem;
+    }
+
+    .main__information p {
+        font-size: 1.3rem;
+        margin: 3% 0;
+    }
+    footer {
+        height: 79px;
+    }
+}
+
+@media screen and (min-width: 1020px) {
+
+    header {
+        height: 108px;
+    }
+
+    .header__logo {
+        margin-left: 60px;
+    }
+
+    .header__logo img {
+        width: 17%;
+    }
+    
+    main {
+        margin-top: 3%;
+        margin: 3% 5% 0 5%;
+    }
+
+    .main__img-container {
+        margin: 0;
+    }
+
+    .main__img-container img {
+        width: 100%;
+    }
+
+    .main__information {
+        text-align: left;
+        margin: 38px 100px 0 50px;
+    }
+
+    .main__information h1 {
+        font-size: 3.4rem;
+    }
+
+    .main__information p {
+        font-size: 1.5rem;
+        margin: 3% 0;
+    }
+
+    .main__information button {
+        font-size: 2rem;
+        width: 160px;
+    }
+
+    footer {
+        height: 79px;
+    }
+
+    footer .social-networks {
+        margin: auto 0 auto 85%;
+    }
+
+    footer .social-networks a {
+        font-size: 2.3rem;
+    }
+
+}
+
+@media screen and (min-width: 1440px){
+    
+    header {
+        height: 150px;
+    }
+
+    .main__information {
+        margin: 38px 0 0px 50px;
+    }
+
+    .main__img-container img {
+        width: auto;
+    }
+
+    .main__information h1 {
+        font-size: 4rem;
+    }
+    
+    .main__information p {
+        font-size: 1.8rem;
+        margin: 3% 0;
+    }
+    
+    .main__information button {
+        height: 60px;
+        width: 200px;
+    }
+
+}
